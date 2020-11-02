@@ -1,0 +1,1 @@
+<?phpnamespace app\common\model;use think\Model;class ActiveCard extends Model{    public function getStatusAttr($value)    {        $status = [            0=>'未使用',1=>'已使用',        ];        return $status[$value];    }}
